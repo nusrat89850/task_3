@@ -1,0 +1,41 @@
+<!DOCTYPE htML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>restaurant reservation form</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <section class="flex items-center justify-center h-screen mt-5">
+            <div class="max-w-[600px] w-[600px] min-h-[600px] bg-gray-300 p-10 rounded-lg shadow-lg flex items-center flex-col gap-10">
+              <form action="https://formspree.io/f/xrbggozw" method="POST">
+                <h2 class="text-center text-2xl font-bold text-gray-700">Restaurant Reservation Form</h2>
+                <!--<h1 class="text-blue-600 text-center text-3xl">Restaurant Reservation Form</h1>-->
+                <div class="flex items-center justify-center gap-5">
+                   <h1 class="text-gray-600 font-bold mt-10">Name<br>
+                   <input type="text" placeholder="First" name="First" class="px-4 py-2 mr-5" />
+                   <input type="text" placeholder="Last" name="Last" class="px-4 py-2" /></h1>
+                </div>
+                <div class="flex items-center justify-center gap-5 mt-5">
+                   <h1 class="text-gray-600 font-bold">Email<br>
+                   <input type="text" placeholder="e.g, abc@gmail.com" name="your_mail" class="px-4 py-2" /></h1>
+                   <h1 class="text-gray-600 font-bold">Phone<br>
+                   <input type="number" placeholder="### ### ####" name="phone_number" class="px-4 py-2" />
+                </div>
+                <div class="flex items-center justify-center gap-5 mt-5">
+                    <h1 class="text-gray-600 font-semibold">Reservation Date<br>
+                    <input type="date" placeholder="MM/DD/YYYY" name="reservation_date" class="px-4 py-2" /></h1>
+                    <h1 class="text-gray-600 font-semibold">Reservation Time<br>
+                    <input type="time" placeholder="HH:MM AM" name="reservation_time" class="px-4 py-2 mr-10" />
+                 </div>
+                 <h1 class="text-gray-600 font-semibold w-full mt-5">How many person you will be with?<br>
+                 <input type="number" placeholder="" name="person_number" class="px-4 py-2 w-full" /></h1>
+                 <h1 class="text-gray-600 font-semibold w-full mt-5">Notes<br>
+                 <textarea name="Your_message" cols="62" rows="2" placeholder="" ></textarea></h1>
+                 <input type="submit" class="text-white bg-gray-600 font-bold cursor-pointer px-60 py-2 rounded-lg mt-5 hover:bg-gray-950 duration-300" value="Save" />
+               </form>
+            </div>
+        </section>
+    </body>
+</html>
